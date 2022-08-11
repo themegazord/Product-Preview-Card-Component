@@ -1,0 +1,150 @@
+* {
+	margin: 0px;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+    box-sizing: border-box;
+}
+@media (max-width: 1440px) {
+    body {
+        display: flex;
+        flex-direction: column;
+        font-size: 62.5%;
+        background: hsl(30, 38%, 92%);
+        width: 100%;
+        min-height: 100vh;
+        align-items: center;
+        justify-content: center;
+    }
+    .title {
+        font-size: 3.0rem;
+        font-family: Fraunces, sans-serif;
+        font-weight: 700;
+    }
+    .type {
+        font-size: 1rem;
+        letter-spacing: 0.4em;
+        font-weight: 500;
+        font-family: Montserrat, sans-serif;
+    }
+    p{
+        font-size: 0.875rem;
+        font-family: Montserrat, sans-serif;
+    }
+    
+    .content {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        background:  hsl(0, 0%, 100%);
+        align-items: center;
+        max-width: 50rem;
+        border-radius: 5%;
+    }
+    
+    img {
+        width: 100%;
+        border-radius: 5% 0 0 5%;
+    }
+    
+    .content__right {
+       display: flex;
+       flex-direction: column;
+       gap: 1.8rem;
+       padding-right: 3rem;
+       padding-left: 3rem;
+    }
+    
+    .price__item {
+        padding: 3rem;
+        display: grid;
+        grid-template-columns: 50% 50%;
+        align-items: center;
+    }
+    
+    
+    .discount__price p {
+        font-family: Fraunces, sans-serif;
+        color: hsl(158, 36%, 37%);
+        font-size: 2.0rem;
+    }
+    
+    .original__price p{
+        font-family: Montserrat, sans-serif;
+        font-size: .8rem;
+        text-decoration: line-through;
+    }
+    .btn {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .add_cart {
+        background: hsl(158, 36%, 37%);
+        color: hsl(0, 0%, 100%);
+        width: 15rem;
+        height: 3rem;
+        border-radius: 10px;
+        font-size: 1.1rem;
+        font-weight: 500;
+        font-family: Montserrat, sans-serif;
+    }
+    
+}
+
+@media (max-width: 375px) {
+    body{
+        padding: 3.0rem;
+    }
+
+    .content {
+        display: flex;
+        flex-direction: column;
+        border-radius: 5%;
+    }
+
+    img{
+        border-radius: 5% 5% 0 0;
+        content: url('./images/image-product-mobile.jpg')
+    }
+    .content__right{
+        padding-right: 1.5rem;
+        padding-left: 1.5rem;
+        gap: 1.0rem;
+    }
+
+    .price__item {
+        padding: 1.5rem;
+        display: grid;
+        grid-template-columns: 60% 40%;
+        align-items: center;
+    }
+    .type{
+        margin-top: 0.6rem;
+        font-size: 0.8rem;
+        letter-spacing: 0.4em;
+        font-weight: 500;
+        font-family: Montserrat, sans-serif;
+    }
+
+    .title {
+        font-size: 1.5rem;
+    }
+    .btn {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 1.3rem;
+    }
+
+    .add_cart {
+        background: hsl(158, 36%, 37%);
+        color: hsl(0, 0%, 100%);
+        width: 15rem;
+        height: 3rem;
+        border-radius: 10px;
+        font-size: 0.9rem;
+        font-weight: 500;
+        font-family: Montserrat, sans-serif;
+    }
+}
