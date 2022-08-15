@@ -1,3 +1,5 @@
+# Link to the page: https://incandescent-phoenix-6d0d26.netlify.app
+
 # Frontend Mentor - Product preview card component
 
 ![Design preview for the Product preview card component coding challenge](./design/desktop-preview.jpg)
